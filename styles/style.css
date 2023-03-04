@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+}
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.cardContainer .card {
+  width: 400px;
+  height: 520px;
+  border-radius: 0.3em;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px hsl(0, 0%, 73.9%);
+  padding: 3em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cardContainer .card .title {
+  margin-bottom: 1em;
+}
+.cardContainer .card .inputGroup {
+  width: 100%;
+  margin: 1.5em 0;
+}
+input[type='range'] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  height: 0.5px;
+  background: #a3a3a3;
+  border: none;
+  border-radius: 3px;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -7px;
+  background-color: #fff;
+  border: 2px solid #f09831;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+input[type='range']:focus {
+  outline: none;
+}
+.cardContainer .card .inputGroup .textContainer {
+  margin-top: 2em;
+}
+.cardContainer .card .inputGroup .textContainer .text {
+  font-size: 0.8em;
+}
+.cardContainer .card .inputGroup .textContainer .number {
+  background-color: #ebebeb;
+  border: none;
+  padding: 0.3em;
+  font-size: 1em;
+  height: 30px;
+  width: 60px;
+  margin-left: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+.cardContainer .card .inputGroup .textContainer .number:focus {
+  outline: none;
+}
+.cardContainer .card .inputGroup .textContainer .unit {
+  font-size: 0.7em;
+}
+.cardContainer .card .button {
+  width: 100%;
+  background-color: #f09831;
+  color: #fff;
+  padding: 0.75em;
+  cursor: pointer;
+  border: none;
+  margin-top: 1.5em;
+}
+.cardContainer .card .button:focus {
+  outline: none;
+}
+.cardContainer .card .result {
+  margin-top: 2em;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  display: flex;
+}
+.cardContainer .card .result p {
+  margin-left: 1em;
+}
+.cardContainer .card .category {
+  margin: 1em 0;
+  font-size: 1.1em;
+}
+
+@media only screen and (max-width: 450px) {
+  .cardContainer .card .title {
+    font-size: 1.1em;
+  }
+  .cardContainer .card {
+    width: 90%;
+    height: 500px;
+    padding: 3em 1.5em;
+  }
+  .cardContainer .card .inputGroup .textContainer .text {
+    font-size: 0.7em;
+  }
+  .cardContainer .card .inputGroup .textContainer .number {
+    padding: 0.3em;
+    font-size: 0.8em;
+    height: 25px;
+    margin-left: 15px;
+  }
+  .cardContainer .card .inputGroup .textContainer .unit {
+    font-size: 0.6em;
+  }
+  .cardContainer .card .button {
+    font-size: 0.8em;
+  }
+  .cardContainer .card .result {
+    font-size: 0.85em;
+  }
+}

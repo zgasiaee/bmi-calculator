@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi-calculator</title>
+    <link rel="stylesheet" href="styles/style.css" >
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="cardContainer">
+        <div class="card">
+            <h2 class="title">Calculate your BMI</h2>
+            <div class="inputGroup">
+               <input class="range" id="widthNumber" type="range" value="50" min="25" max="180" />
+               <div class="textContainer">
+                  <span class="text">WEIGHT:</span>
+                  <input class="number" type="number" id="widthNumber" value="50" />
+                  <span class="unit">kg</span>
+               </div>
+            </div>
+            <div class="inputGroup">
+                <input class="range" id="heightNumber" type="range" value="150" min="100" max="220" />
+                <div class="textContainer">
+                   <span class="text">HEIGHT:</span>
+                   <input class="number" id="heightNumber" type="number" value="150" />
+                   <span class="unit">cm</span>
+                </div>
+             </div>
+             <button class="button">CALCULATE</button>
+             <span class="result">Your BMI:<p></p></span>
+             <span class="category"></span>
+         </div>
+    </div>
+</body>
+</html>
